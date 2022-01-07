@@ -10,7 +10,24 @@ You can read more about this method in [this paper](https://doi.org/10.1038/s422
 
 ### Run DEcode on Code Ocean
 
-You can run DEcode on [Code Ocean platform](https://doi.org/10.24433/CO.0084803.v1) without setting up a computational environment. Our Code Ocean capsule provides reproducible workflows, all processed data, and pre-trained models for tissue- and person-specific transcriptomes and DEprior, at gene- or transcript level.   
+You can run DEcode on [Code Ocean platform](https://doi.org/10.24433/CO.0084803.v1) without setting up a computational environment. Our Code Ocean capsule provides reproducible workflows, all processed data, and pre-trained models for tissue- and person-specific transcriptomes and DEprior, at gene- or transcript level.
+
+### Installing dependencies
+
+You can install dependencies with requirements.txt and pip with:
+
+```sh
+pip install -r requirements.txt
+```
+
+Or to set up a virtual environment with virtualenv, clone the repository locally and cd into it. Then initialize the environment with:
+
+```sh
+virtualenv -p python2 decodeenv
+decodeenv/bin/activate
+```
+
+and install the dependencies via pip as before and they will be installed within the decode private environment, not impacting globally installing python packages.
 
 
 #### If you find DEcode useful in your work, please cite our manuscript.
