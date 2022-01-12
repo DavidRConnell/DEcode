@@ -24,7 +24,7 @@ Or to set up a virtual environment with virtualenv, clone the repository locally
 
 ```sh
 virtualenv -p python2 decodeenv
-decodeenv/bin/activate
+source decodeenv/bin/activate
 ```
 
 and install the dependencies via pip as before and they will be installed within the decode private environment, not impacting globally installing python packages.
